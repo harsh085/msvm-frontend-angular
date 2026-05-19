@@ -1,27 +1,195 @@
-# MsvmFrontend
+# Maa Sharda Vidya Mandir Dhar Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+Official school website project for **Maa Sharda Vidya Mandir, Dhar** developed using Angular 17 and Node.js.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Project Overview
 
-## Code scaffolding
+This website is designed for students, parents, and visitors to access important school information online in a simple and user-friendly way.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The website includes:
 
-## Build
+- School information
+- Admission details
+- Notices and announcements
+- Gallery and events
+- Contact details
+- Admin panel integration
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🛠️ Tech Stack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Frontend
+- Angular 17
+- TypeScript
+- HTML5
+- CSS3 / SCSS
+- Bootstrap
 
-## Running end-to-end tests
+### Backend
+- Node.js
+- Express.js
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Database
+- MySQL
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🚀 Features
+
+- Fully responsive design
+- Dynamic notice board
+- Image gallery
+- Contact form
+- Admin login system
+- Mobile-friendly interface
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│── app/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── models/
+│   └── app-routing.module.ts
+│
+│── assets/
+│── environments/
+└── styles.scss
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Go to project directory:
+
+```bash
+cd msvm-website
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Run Development Server
+
+Start Angular frontend:
+
+```bash
+ng serve
+```
+
+Open browser:
+
+```bash
+http://localhost:4200/
+```
+
+---
+
+## 🔧 Backend Setup
+
+Move to backend folder:
+
+```bash
+cd backend
+```
+
+Install backend dependencies:
+
+```bash
+npm install
+```
+
+Start backend server:
+
+```bash
+npm start
+```
+
+Backend will run on:
+
+```bash
+http://localhost:5000/
+```
+
+---
+
+## 🏗️ Build Project
+
+```bash
+ng build
+```
+
+Build files will be generated inside:
+
+```bash
+dist/
+```
+
+---
+
+## 🌐 Environment Configuration
+
+Update API URL inside:
+
+```bash
+src/environments/environment.ts
+```
+
+Example:
+
+```typescript
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:5000/api'
+};
+```
+
+---
+
+## 📸 Website Modules
+
+- Home Page
+- About Us
+- Gallery
+- Notices
+- Contact Page
+- Admin Dashboard
+
+---
+
+## 👨‍💻 Developed By
+
+**Harshit Nigam**  
+AI/ML Engineer & Full Stack Developer
+
+---
+
+## 📍 School Information
+
+**Maa Sharda Vidya Mandir**  
+Dhar, Madhya Pradesh, India
+
+---
+
+## 📄 License
+
+This project is developed for educational and official school use only.

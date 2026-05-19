@@ -1,0 +1,23 @@
+<!-- Gallery Hero -->
+<section class="hero-section" style="min-height:50vh;">
+  <div class="container text-center position-relative" style="z-index:2;">
+    <div data-aos="fade-up">
+      <h1 class="hero-title" style="font-size:3rem;">Our <span>Gallery</span></h1>
+      <p class="hero-subtitle">Moments captured, memories preserved 📸</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Grid -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let img of images; let i = index"
+           [attr.data-aos]="'zoom-in'" [attr.data-aos-delay]="i * 100">
+        <div class="gallery-item">
+          <img [src]="img" alt="Gallery Image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

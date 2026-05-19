@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/"><img src="/assets/logo.png" alt="MSVM" style="height:50px;"> MSVM</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li><a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a class="nav-link" routerLink="/gallery" routerLinkActive="active">Gallery</a></li>
+        <li><a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+
+      <!-- Not Logged In -->
+      <div class="d-flex gap-2" *ngIf="!auth.isLoggedIn()">
+        <a class="btn-login" routerLink="/login">Login</a>
+        <a class="btn-register" routerLink="/register">Register</a>
+      </div>
+
+      <!-- Logged In -->
+      <div class="d-flex gap-2 align-items-center" *ngIf="auth.isLoggedIn()">
+        <a class="btn-login" [routerLink]="'/' + auth.getUser()?.role">
+          <i class="fas fa-tachometer-alt me-1"></i>Dashboard
+        </a>
+        <button class="btn-register" style="border:none;" (click)="logout()">
+          <i class="fas fa-sign-out-alt me-1"></i>Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

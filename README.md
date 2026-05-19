@@ -60,7 +60,6 @@ src/
 │   └── app-routing.module.ts
 │
 │── assets/
-│── environments/
 └── styles.scss
 ```
 
@@ -71,13 +70,13 @@ src/
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/harsh085/msvm-frontend-angular.git
 ```
 
 Go to project directory:
 
 ```bash
-cd msvm-website
+cd msvm-frontend-angular
 ```
 
 Install dependencies:
@@ -132,39 +131,6 @@ http://localhost:5000/
 
 ---
 
-## 🏗️ Build Project
-
-```bash
-ng build
-```
-
-Build files will be generated inside:
-
-```bash
-dist/
-```
-
----
-
-## 🌐 Environment Configuration
-
-Update API URL inside:
-
-```bash
-src/environments/environment.ts
-```
-
-Example:
-
-```typescript
-export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:5000/api'
-};
-```
-
----
-
 ## 📸 Website Modules
 
 - Home Page
@@ -173,13 +139,6 @@ export const environment = {
 - Notices
 - Contact Page
 - Admin Dashboard
-
----
-
-## 👨‍💻 Developed By
-
-**Harshit Nigam**  
-AI/ML Engineer & Full Stack Developer
 
 ---
 

@@ -6,7 +6,7 @@ import { isPlatformBrowser } from '@angular/common';
   providedIn: 'root'
 })
 export class AuthService {
-  private API = ' https://msvm-backend-node.onrender.com';
+  private API = ' https://msvm-backend-node.onrender.com/api';
   private isBrowser: boolean;
   private SESSION_KEY = 'user';
   private EXPIRY_KEY = 'session_expiry';
